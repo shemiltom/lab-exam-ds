@@ -1,0 +1,17 @@
+import numpy as np
+a=np.array([
+    [1,4,3],
+    [5,7,8],
+    [4,7,6]
+])
+print(a)
+b=np.array([
+    [2],
+    [4],
+    [7]
+])
+print(b)
+ai=np.linalg.inv(a)
+print(ai)
+x=np.linalg.solve(ai,b)
+print(x)
